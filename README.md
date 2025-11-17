@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes. You may also see any errors in the console.
 
-### npm i axios reacter-router dom
+### npm i axios react-router dom
 Install the axios package for frontend and backend communication and also install react-router-dom for routing in web applications.
 
 ### npm i react-datepicker
