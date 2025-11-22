@@ -6,7 +6,6 @@ import LoginPage from './component/auth/LoginPage';
 import RegisterPage from './component/auth/RegisterPage';
 import HomePage from './component/home/HomePage';
 import RoomDetailsBookingPage from './component/booking_rooms/RoomDetailsPage';
-import ViewBookingPage from './component/booking_rooms/ViewBookingPage';
 import AdminPage from './component/admin/AdminPage';
 import ManageRoomPage from './component/admin/ManageRoomPage';
 import EditRoomPage from './component/admin/EditRoomPage';
@@ -29,7 +28,6 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/rooms" element={<RoomSearch />} />
-            <Route path="/find-booking" element={<ViewBookingPage />} />
 
             {/* Protected Routes (only for logged-in users) */}
             <Route

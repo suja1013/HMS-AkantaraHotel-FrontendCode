@@ -37,7 +37,6 @@ function Navbar() {
 
                 {/* User-specific links */}
                 {isUser && <li><NavLink to="/rooms" activeclassname="active">Rooms</NavLink></li>}
-                {isUser && <li><NavLink to="/find-booking" activeclassname="active">View my Bookings</NavLink></li>}
                 {isUser && <li><NavLink to="/profile" activeclassname="active">User</NavLink></li>}
                 
 

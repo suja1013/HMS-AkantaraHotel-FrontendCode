@@ -15,12 +15,23 @@ const RoomResult = ({ roomSearchResults }) => {
                                 <h3>{room.roomType}</h3>
                                 <p>Price: ${room.roomPrice} / night</p>
                                 <p>Description: {room.roomDescription}</p>
-                                <button
-                                    className="book-now-button"
-                                    onClick={() => navigate(`/room-details-book/${room.id}`)} // Navigate to book room with room ID
-                                >
-                                    View/Book Room
-                                </button>
+                                
+                                {/* Show different buttons based on user role */}
+                                {isAdmin ? (
+                                    <button
+                                        className="edit-room-button"
+                                        onClick={() => navigate(`/admin/edit-room/${room.id}`)} // Navigate to edit room with room ID
+                                    >
+                                        Edit Room
+                                    </button>
+                                ) : (
+                                    <button
+                                        className="book-now-button"
+                                        onClick={() => navigate(`/room-details-book/${room.id}`)} // Navigate to book room with room ID
+                                    >
+                                        View/Book Now
+                                    </button>
+                                )}
                             </div>
                         </div>
                     ))}
